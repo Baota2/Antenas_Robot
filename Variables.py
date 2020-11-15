@@ -1,0 +1,10 @@
+BROWSER = "chrome"
+SELSPEED = 0.25
+SENHA = 123456
+NOMEALUNO = "Aluno01"
+NOMECADI = "Cadi01"
+NOMEEMPRESARIO = "Empresario01"
+COMPANYNAME = "Empresa O1"
+CNPJ = "66386932000122"
+NOMEPROFESSOR = "Professor01"
+QA_URL = "http://ec2-3-138-123-144.us-east-2.compute.amazonaws.com/"

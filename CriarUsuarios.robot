@@ -1,27 +1,66 @@
 *** Settings ***
 Library  SeleniumLibrary
-
-*** Variables ***
-${BROWSER}   chrome
-${SELSPEED}  1.0s
+Variables    Variables.py
+Test Setup    Run Keywords  Open Browser  ${QA_URL}  ${BROWSER}
+    ...              AND   Set Selenium Speed  ${SELSPEED}
+#Test TearDown    Close Browser    
 
 *** Test Cases ***
-Untitled Test Case
-    [Setup]  Run Keywords  Open Browser  http://ec2-3-138-123-144.us-east-2.compute.amazonaws.com/  ${BROWSER}
-    ...              AND   Set Selenium Speed  ${SELSPEED}
-    # open    http://ec2-3-138-123-144.us-east-2.compute.amazonaws.com/
+Criar Aluno
     click    xpath=//div[@id='root']/article/nav/div/a[2]/button/span
     click    name=name
-    type    name=name    Teste 2
-    type    name=email    teste2@email.com
-    type    name=password    1234
-    click    xpath=//body
+    type    name=name    ${NOMEALUNO}
+    click    name=email
+    type    name=email    ${NOMEALUNO}@email.com
+    click    name=password
+    type    name=password    ${SENHA}
     mouseDown    id=mui-component-select-type
-    mouseUp    css=.MuiListItem-root:nth-child(2)
-    click    css=body
-    click    css=.MuiButtonBase-root:nth-child(3)
-    Click    xpath=//div[@id='root']/div/div/div[2]/div/div/section/form/div[5]/button/span
-    # [Teardown]  Close Browser
+    click    xpath=/html/body/div[2]/div[3]/ul/li[3]
+    click    xpath=/html/body/div/div/div/div[2]/div/div/h2
+    click    xpath=//div[@id='root']/div/div/div[2]/div/div/section/form/div[5]/button/span
+
+Criar Cadi
+    click    xpath=//div[@id='root']/article/nav/div/a[2]/button/span
+    click    name=name
+    type    name=name    ${NOMECADI}
+    click    name=email
+    type    name=email    ${NOMECADI}@email.com
+    click    name=password
+    type    name=password    ${SENHA}
+    mouseDown    id=mui-component-select-type
+    click    xpath=/html/body/div[2]/div[3]/ul/li[2]
+    click    xpath=/html/body/div/div/div/div[2]/div/div/h2
+    click    xpath=//div[@id='root']/div/div/div[2]/div/div/section/form/div[5]/button/span
+    
+Criar Empresario
+    click    xpath=//div[@id='root']/article/nav/div/a[2]/button/span
+    click    name=name
+    type    name=name    ${NOMEEMPRESARIO}
+    click    name=email
+    type    name=email    ${NOMEEMPRESARIO}@email.com
+    click    name=password
+    type    name=password    ${SENHA}
+    mouseDown    id=mui-component-select-type
+    click    xpath=/html/body/div[2]/div[3]/ul/li[1]
+    click    name=company
+    type    name=company    ${COMPANYNAME}
+    click    name=cnpj
+    type    name=cnpj    ${CNPJ}
+    click    xpath=/html/body/div/div/div/div[2]/div/div/h2
+    click    xpath=/html/body/div/div/div/div[2]/div/div/section/form/div[7]/button/span[1]
+    
+Criar Professor
+    click    xpath=//div[@id='root']/article/nav/div/a[2]/button/span
+    click    name=name
+    type    name=name    ${NOMEPROFESSOR}
+    click    name=email
+    type    name=email    ${NOMEPROFESSOR}@email.com
+    click    name=password
+    type    name=password    ${SENHA}
+    mouseDown    id=mui-component-select-type
+    click    xpath=/html/body/div[2]/div[3]/ul/li[4]
+    click    xpath=/html/body/div/div/div/div[2]/div/div/h2
+    click    xpath=//div[@id='root']/div/div/div[2]/div/div/section/form/div[5]/button/span
 
 *** Keywords ***
 open

@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 Variables    Variables.py
 Test Setup    Run Keywords  Open Browser  ${PROD_URL}  ${BROWSER}
-    ...              AND   Set Selenium Speed  ${SELSPEED}
+    ...              AND   Set Selenium Speed  ${SELSPEED}    
 #Test TearDown    Close Browser    
 
 *** Test Cases ***

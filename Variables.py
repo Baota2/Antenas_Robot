@@ -1,11 +1,12 @@
 BROWSER = "chrome"
 SELSPEED = 0.25
 SENHA = 123456
-NOMEALUNO = "Aluno01"
-NOMECADI = "Cadi01"
-NOMEEMPRESARIO = "Empresario01"
+NOMEALUNO = "Aluno02"
+NOMECADI = "Cadi02"
+NOMEEMPRESARIO = "Empresario02"
 COMPANYNAME = "Empresa O1"
 CNPJ = "66386932000122"
-NOMEPROFESSOR = "Professor01"
+NOMEPROFESSOR = "Professor02"
 QA_URL = "http://ec2-3-138-123-144.us-east-2.compute.amazonaws.com/"
 PROD_URL = "http://ec2-34-230-78-226.compute-1.amazonaws.com/"
+DEV_URL = "http://antenas-front.herokuapp.com/"

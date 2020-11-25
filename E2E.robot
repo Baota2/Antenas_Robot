@@ -22,13 +22,13 @@ Logar Empresario e Criar Projeto
     click    xpath=/html/body/div/article/div/div/div[1]/div/div/div/button[1]/span[1]
     #Nome do Projeto
     click    name=title
-    type    name=title    Projeto Test
+    type    name=title    ${TITULO_PROJETO}
     #Descricao do Projeto
     click    name=quickDescription
-    type    name=quickDescription    Projeto Criado para o teste E2E
+    type    name=quickDescription    ${DESC_PROJETO}
     #Link do Projeto
     click    name=linkOne
-    type    name=linkOne    prj_teste.com.br
+    type    name=linkOne    ${LINK_PROJETO}
     #Clicar no Botao Confirmar
     click    xpath=//div[@id='root']/article/h2
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/form/div[4]/button/span
@@ -50,24 +50,24 @@ Logar Cadi e Aprovacao da Criaco do Projeto
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div/div/div/div
     sleep    3s
     #Selecionar Empresario
-    click    id=react-select-2-option-3
+    click    id=react-select-empresario-option-5
     #Clicar na Lista de Projetos
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[2]/div/div/div
     sleep    3s
     #Selecionar Projeto
-    click    id=react-select-3-option-10
+    click    id=react-select-project-option-13
     sleep    3s
     #Clicar na Etapa
     click    xpath=/html/body/div/article/div/div/div[2]/div/div/div[4]/form/div[1]/div
     sleep    3s
     #Selecionar Etapa
-    click    id=react-select-4-option-0
+    click    id=react-select-step-option-0
     sleep    3s
     #Aprova ou Reprova
     click    xpath=//*[@id="root"]/article/div/div/div[2]/div/div/div[4]/form/div[2]/div/label[1]/span[1]/span[1]/input
     #Justificativa
     click    name=state.reason
-    type    name=state.reason    Aprovacao da Criacao do Projeto
+    type    name=state.reason    ${STEP_ZERO}
     #Clicar em Confirmar
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[4]/form/div[4]/button/span 
     #APROVACAO DO PROJETO
@@ -75,13 +75,13 @@ Logar Cadi e Aprovacao da Criaco do Projeto
     click    xpath=/html/body/div/article/div/div/div[2]/div/div/div[4]/form/div[1]/div
     sleep    3s
     #Selecionar Etapa
-    click    id=react-select-4-option-1
+    click    id=react-select-step-option-1
     sleep    3s
     #Aprova ou Reprova
     click    xpath=//*[@id="root"]/article/div/div/div[2]/div/div/div[4]/form/div[2]/div/label[1]/span[1]/span[1]/input
     #Justificativa
     click    name=state.reason
-    type    name=state.reason    Aprovacao do Projeto
+    type    name=state.reason    ${STEP_ONE}
     #Clicar em Confirmar
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[4]/form/div[4]/button/span
     
@@ -102,20 +102,20 @@ Logar Empresario e Fazer Descricao Completa do Projeto
     #Selecionar Projeto Desejado
     click    xpath=/html/body/div/article/div/div/div[3]/div/section/div/div
     sleep    3s
-    click    id=react-select-2-option-10
+    click    id=react-select-project-option-13
     #Preenchimento das Informacoes
     sleep    3s
     click    name=fullDescription
-    type    name=fullDescription    Descricao Completa
+    type    name=fullDescription    ${DESC_FULL}
     click    name=techDescription
-    type    name=techDescription    Descricao Tecnologica
+    type    name=techDescription    ${DESC_TECNO}
     click    name=linkTwo
-    type    name=linkTwo    link2.com.br
+    type    name=linkTwo    ${LINK_2_PROJETO}
     click    name=reunion.place
-    type    name=reunion.place    FATEC SJC
+    type    name=reunion.place    ${REUNIAO_LOCAL}
     click    name=reunion.possibleDate
     click    name=reunion.possibleDate
-    type    name=reunion.possibleDate    2020-11-25T15:00
+    type    name=reunion.possibleDate    ${DATA_E_HORA}
     #Clicar em Confirmar
     click    xpath=//div[@id='root']/article/div/div/div[3]/div/section/section/div/div[2]/div/div/div/div/form/div[10]/button/span  
     
@@ -136,24 +136,24 @@ Logar no CADI e Aprovacoes Seguintes
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div/div/div/div
     sleep    3s
     #Selecionar Empresario
-    click    id=react-select-2-option-3
+    click    id=react-select-empresario-option-5
     #Clicar na Lista de Projetos
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[2]/div/div/div
     sleep    3s
     #Selecionar Projeto
-    click    id=react-select-3-option-10
+    click    id=react-select-project-option-13
     sleep    3s
     #Clicar na Etapa
     click    xpath=/html/body/div/article/div/div/div[2]/div/div/div[4]/form/div[1]/div
     sleep    3s
     #Selecionar Etapa
-    click    id=react-select-4-option-2
+    click    id=react-select-step-option-2
     sleep    3s
     #Aprova ou Reprova
     click    xpath=//*[@id="root"]/article/div/div/div[2]/div/div/div[4]/form/div[2]/div/label[1]/span[1]/span[1]/input
     #Justificativa
     click    name=state.reason
-    type    name=state.reason    Aprovacao da Descricao Completa
+    type    name=state.reason    ${STEP_TWO}
     #Clicar em Confirmar
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[4]/form/div[4]/button/span
     #APROVACAO DA DESCRICAO COMPLETA
@@ -161,13 +161,13 @@ Logar no CADI e Aprovacoes Seguintes
     click    xpath=/html/body/div/article/div/div/div[2]/div/div/div[4]/form/div[1]/div
     sleep    3s
     #Selecionar Etapa
-    click    id=react-select-4-option-3
+    click    id=react-select-step-option-3
     sleep    3s
     #Aprova ou Reprova
     click    xpath=//*[@id="root"]/article/div/div/div[2]/div/div/div[4]/form/div[2]/div/label[1]/span[1]/span[1]/input
     #Justificativa
     click    name=state.reason
-    type    name=state.reason    Aprovacao da Descricao Completa
+    type    name=state.reason    ${STEP_THREE}
     #Clicar em Confirmar
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[4]/form/div[4]/button/span
     #APROVACAO DA REUNIAO
@@ -175,13 +175,13 @@ Logar no CADI e Aprovacoes Seguintes
     click    xpath=/html/body/div/article/div/div/div[2]/div/div/div[4]/form/div[1]/div
     sleep    3s
     #Selecionar Etapa
-    click    id=react-select-4-option-4
+    click    id=react-select-step-option-4
     sleep    3s
     #Aprova ou Reprova
     click    xpath=//*[@id="root"]/article/div/div/div[2]/div/div/div[4]/form/div[2]/div/label[1]/span[1]/span[1]/input
     #Justificativa
     click    name=state.reason
-    type    name=state.reason    Aprovacao da Reuniao
+    type    name=state.reason    ${STEP_FOUR}
     #Clicar em Confirmar
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[4]/form/div[4]/button/span
     #VINCULACAO DE PROFESSOR
@@ -192,11 +192,11 @@ Logar no CADI e Aprovacoes Seguintes
     #Clicar Lista de Projetos
     click    xpath=/html/body/div/article/div/div/div[3]/div/div/form/div[1]/div
     #Selecionar Projeto
-    click    id=react-select-2-option-1
-    #Clicar Lsita de Professores
+    click    id=react-select-project-option-2
+    #Clicar Lista de Professores
     click    xpath=/html/body/div/article/div/div/div[3]/div/div/form/div[2]/div
-    #Selecionar Projeto
-    click    id=react-select-3-option-2
+    #Selecionar Professor
+    click    id=react-select-professor-option-4
     #Clicar em Confirmar
     click    xpath=/html/body/div/article/div/div/div[3]/div/div/form/div[4]/button/span[1]
     
@@ -217,11 +217,11 @@ Logar Professor e Vincular Aluno
     #Clicar na Lista de Projetos
     click    xpath=/html/body/div/article/div/div/div[4]/div/div/form/div[1]/div
     #Selecionar Projeto
-    click    id=react-select-2-option-1
+    click    id=react-select-project-option-2
     #Clicar na Lista de Alunos
     click    xpath=/html/body/div/article/div/div/div[4]/div/div/form/div[2]/div
     #Selecionar Aluno(s)
-    click    id=react-select-3-option-4
+    click    id=react-select-students-option-7
     #Clicar em Confirmar
     click    xpath=/html/body/div/article/div/div/div[4]/div/div/form/div[3]/button/span[1]
     
@@ -240,10 +240,10 @@ Logar Aluno e Entregar Projeto
     #Clicar Lista de Projetos
     click    xpath=/html/body/div/article/div/div/div[2]/div/div/form/div[1]/div
     #Selecionar Projeto
-    click    id=react-select-6-option-1
+    click    id=react-select-project-option-0
     #Descricao da Entrega
     click    name=delivery
-    type    name=delivery    Entrega do Projeto Teste
+    type    name=delivery    ${ENTREGA_PROJ}
     click    xpath=/html/body/div/article/div/div/div[1]/div/div/div/button/span[1]
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/form/div[3]/button/span
 

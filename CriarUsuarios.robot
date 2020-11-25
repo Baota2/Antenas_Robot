@@ -1,8 +1,8 @@
 *** Settings ***
 Library  SeleniumLibrary
 Variables    Variables.py
-Test Setup    Run Keywords  Open Browser  ${DEV_URL}  ${BROWSER}
-    ...              AND   Set Selenium Speed  ${SELSPEED}    AND
+Test Setup    Run Keywords  Open Browser  ${PROD_URL}  ${BROWSER}
+    ...              AND   Set Selenium Speed  ${SELSPEED}    AND    maximize browser window
 #Test TearDown    Close Browser    
 
 *** Test Cases ***

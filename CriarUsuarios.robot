@@ -1,10 +1,38 @@
 *** Settings ***
 Library  SeleniumLibrary
 Variables    Variables.py
-Test Setup    Run Keywords  Open Browser  ${PROD_URL}  ${BROWSER}
-    ...              AND   Set Selenium Speed  ${SELSPEED}    AND    maximize browser window
-#Test TearDown    Close Browser    
+Test Setup    Run Keywords    Open Browser    ${PROD_URL}    ${BROWSER}
+    ...              AND   Set Selenium Speed    ${SELSPEED}    AND    maximize browser window
+#Test TearDown    Close Browser 
 
+***Variables***
+${BROWSER}    chrome
+${SELSPEED}    0.25
+${SENHA}    123456
+${NOMEALUNO}    AlunoE2E
+${NOMECADI}    CadiE2E
+${NOMEEMPRESARIO}    EmpresarioE2E
+${COMPANYNAME}    EmpresaE2E
+${CNPJ}    66386932000122
+${NOMEPROFESSOR}    ProfessorE2E
+${QA_URL}    http://ec2-3-138-123-144.us-east-2.compute.amazonaws.com/
+${PROD_URL}    http://ec2-54-204-105-109.compute-1.amazonaws.com/
+${DEV_URL}    http://antenas-front.herokuapp.com/
+${TITULO_PROJETO}    Projeto E2E
+${DESC_PROJETO}    Descricao do Projeto E2E
+${LINK_PROJETO}    projetoe2e.com.br
+${STEP_ZERO}    Aprovacao da Criacao do Projeto
+${STEP_ONE}    Aprovacao do Projeto
+${STEP_TWO}    Aprovacao da Descricao Completa do Projeto
+${$STEP_THREE}    Aprovacao do Local, Data e Hora da Reuniao
+${STEP_FOUR}    Aprovacao da Reuniao
+${DESC_FULL}    Descricao Completa do Projeto
+${DESC_TECNO}    Descricao Tecnologica
+${LINK_2_PROJETO}    projetoe2elink2.com.br
+${REUNIAO_LOCAL}    FATEC Sao Jose dos Campos
+${DATA_E_HORA}    2020-12-11T15:00
+${ENTREGA_PROJ}    Entrega do Projeto E2E
+ 
 *** Test Cases ***
 Criar Aluno
     click    xpath=//div[@id='root']/article/nav/div/a[2]/button/span

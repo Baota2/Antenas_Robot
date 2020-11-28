@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20201125 19:45:32.331" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201127 22:14:08.457" rpa="false">
 <suite id="s1" name="Antenas Robot" source="C:\Users\baota\Desktop\FATEC\Antenas_Sakaue\Antenas_Robot\Antenas_Robot">
 <suite id="s1-s1" name="CriarUsuarios" source="C:\Users\baota\Desktop\FATEC\Antenas_Sakaue\Antenas_Robot\Antenas_Robot\CriarUsuarios.robot">
 <test id="s1-s1-t1" name="Criar Aluno">
@@ -15,19 +15,18 @@
 <arg>AND</arg>
 <arg>maximize browser window</arg>
 </arguments>
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<kw name="Open Browser">
 <arguments>
 <arg>${PROD_URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20201125 19:45:33.686" level="FAIL">Variable '${PROD_URL}' not found.</msg>
-<status status="FAIL" starttime="20201125 19:45:33.684" endtime="20201125 19:45:33.686"></status>
+<msg timestamp="20201127 22:14:08.583" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20201127 22:14:08.583" endtime="20201127 22:14:08.583"></status>
 </kw>
-<status status="FAIL" starttime="20201125 19:45:33.680" endtime="20201125 19:45:33.688"></status>
+<status status="FAIL" starttime="20201127 22:14:08.580" endtime="20201127 22:14:08.583"></status>
 </kw>
-<status status="FAIL" starttime="20201125 19:45:33.679" endtime="20201125 19:45:33.688" critical="yes">Setup failed:
-Variable '${PROD_URL}' not found.</status>
+<status status="FAIL" starttime="20201127 22:14:08.579" endtime="20201127 22:14:08.584" critical="yes">Setup failed:
+No keyword with name 'Open Browser' found.</status>
 </test>
 <test id="s1-s1-t2" name="Criar Cadi">
 <kw name="Run Keywords" library="BuiltIn" type="setup">
@@ -42,19 +41,18 @@ Variable '${PROD_URL}' not found.</status>
 <arg>AND</arg>
 <arg>maximize browser window</arg>
 </arguments>
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<kw name="Open Browser">
 <arguments>
 <arg>${PROD_URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20201125 19:45:33.696" level="FAIL">Variable '${PROD_URL}' not found.</msg>
-<status status="FAIL" starttime="20201125 19:45:33.694" endtime="20201125 19:45:33.696"></status>
+<msg timestamp="20201127 22:14:08.588" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20201127 22:14:08.588" endtime="20201127 22:14:08.588"></status>
 </kw>
-<status status="FAIL" starttime="20201125 19:45:33.692" endtime="20201125 19:45:33.698"></status>
+<status status="FAIL" starttime="20201127 22:14:08.585" endtime="20201127 22:14:08.589"></status>
 </kw>
-<status status="FAIL" starttime="20201125 19:45:33.690" endtime="20201125 19:45:33.698" critical="yes">Setup failed:
-Variable '${PROD_URL}' not found.</status>
+<status status="FAIL" starttime="20201127 22:14:08.584" endtime="20201127 22:14:08.589" critical="yes">Setup failed:
+No keyword with name 'Open Browser' found.</status>
 </test>
 <test id="s1-s1-t3" name="Criar Empresario">
 <kw name="Run Keywords" library="BuiltIn" type="setup">
@@ -69,19 +67,18 @@ Variable '${PROD_URL}' not found.</status>
 <arg>AND</arg>
 <arg>maximize browser window</arg>
 </arguments>
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<kw name="Open Browser">
 <arguments>
 <arg>${PROD_URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20201125 19:45:33.706" level="FAIL">Variable '${PROD_URL}' not found.</msg>
-<status status="FAIL" starttime="20201125 19:45:33.702" endtime="20201125 19:45:33.707"></status>
+<msg timestamp="20201127 22:14:08.596" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20201127 22:14:08.596" endtime="20201127 22:14:08.597"></status>
 </kw>
-<status status="FAIL" starttime="20201125 19:45:33.701" endtime="20201125 19:45:33.707"></status>
+<status status="FAIL" starttime="20201127 22:14:08.591" endtime="20201127 22:14:08.597"></status>
 </kw>
-<status status="FAIL" starttime="20201125 19:45:33.699" endtime="20201125 19:45:33.708" critical="yes">Setup failed:
-Variable '${PROD_URL}' not found.</status>
+<status status="FAIL" starttime="20201127 22:14:08.590" endtime="20201127 22:14:08.597" critical="yes">Setup failed:
+No keyword with name 'Open Browser' found.</status>
 </test>
 <test id="s1-s1-t4" name="Criar Professor">
 <kw name="Run Keywords" library="BuiltIn" type="setup">
@@ -96,23 +93,22 @@ Variable '${PROD_URL}' not found.</status>
 <arg>AND</arg>
 <arg>maximize browser window</arg>
 </arguments>
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<kw name="Open Browser">
 <arguments>
 <arg>${PROD_URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20201125 19:45:33.714" level="FAIL">Variable '${PROD_URL}' not found.</msg>
-<status status="FAIL" starttime="20201125 19:45:33.712" endtime="20201125 19:45:33.714"></status>
+<msg timestamp="20201127 22:14:08.601" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20201127 22:14:08.601" endtime="20201127 22:14:08.601"></status>
 </kw>
-<status status="FAIL" starttime="20201125 19:45:33.711" endtime="20201125 19:45:33.715"></status>
+<status status="FAIL" starttime="20201127 22:14:08.599" endtime="20201127 22:14:08.602"></status>
 </kw>
-<status status="FAIL" starttime="20201125 19:45:33.709" endtime="20201125 19:45:33.715" critical="yes">Setup failed:
-Variable '${PROD_URL}' not found.</status>
+<status status="FAIL" starttime="20201127 22:14:08.598" endtime="20201127 22:14:08.602" critical="yes">Setup failed:
+No keyword with name 'Open Browser' found.</status>
 </test>
-<status status="FAIL" starttime="20201125 19:45:32.501" endtime="20201125 19:45:33.717"></status>
+<status status="FAIL" starttime="20201127 22:14:08.563" endtime="20201127 22:14:08.603"></status>
 </suite>
-<status status="FAIL" starttime="20201125 19:45:32.449" endtime="20201125 19:45:33.723"></status>
+<status status="FAIL" starttime="20201127 22:14:08.515" endtime="20201127 22:14:08.605"></status>
 </suite>
 <statistics>
 <total>
@@ -127,15 +123,17 @@ Variable '${PROD_URL}' not found.</status>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20201125 19:45:33.676" level="ERROR">Error in file 'C:\Users\baota\Desktop\FATEC\Antenas_Sakaue\Antenas_Robot\Antenas_Robot\CriarUsuarios.robot': Processing variable file 'C:\Users\baota\Desktop\FATEC\Antenas_Sakaue\Antenas_Robot\Antenas_Robot\Variables.py' failed: Importing variable file 'C:\Users\baota\Desktop\FATEC\Antenas_Sakaue\Antenas_Robot\Antenas_Robot\Variables.py' failed: SyntaxError: invalid syntax (Variables.py, line 23)
+<msg timestamp="20201127 22:14:08.573" level="ERROR">Error in file 'C:\Users\baota\Desktop\FATEC\Antenas_Sakaue\Antenas_Robot\Antenas_Robot\CriarUsuarios.robot' on line 2: Importing test library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
 Traceback (most recent call last):
   None
 PYTHONPATH:
   C:\Users\baota\Desktop\FATEC\Antenas_Sakaue\Antenas_Robot\Antenas_Robot
-  C:\Users\baota\AppData\Local\Programs\Python\Python37-32\python37.zip
-  C:\Users\baota\AppData\Local\Programs\Python\Python37-32\DLLs
-  C:\Users\baota\AppData\Local\Programs\Python\Python37-32\lib
-  C:\Users\baota\AppData\Local\Programs\Python\Python37-32
-  C:\Users\baota\AppData\Local\Programs\Python\Python37-32\lib\site-packages</msg>
+  C:\Users\baota\AppData\Local\Programs\Python\Python39\python39.zip
+  C:\Users\baota\AppData\Local\Programs\Python\Python39\DLLs
+  C:\Users\baota\AppData\Local\Programs\Python\Python39\lib
+  C:\Users\baota\AppData\Local\Programs\Python\Python39
+  C:\Users\baota\AppData\Roaming\Python\Python39\site-packages
+  C:\Users\baota\AppData\Local\Programs\Python\Python39\lib\site-packages</msg>
+<msg timestamp="20201127 22:14:08.578" level="ERROR">Error in file 'C:\Users\baota\Desktop\FATEC\Antenas_Sakaue\Antenas_Robot\Antenas_Robot\CriarUsuarios.robot' on line 3: Variable file '..\Variables.py' does not exist.</msg>
 </errors>
 </robot>

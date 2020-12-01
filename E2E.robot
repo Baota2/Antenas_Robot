@@ -50,7 +50,7 @@ Logar Cadi e Aprovacao da Criaco do Projeto
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div/div/div/div
     sleep    3s
     #Selecionar Empresario
-    click    id=react-select-empresario-option-7
+    click    id=react-select-empresario-option-11
     #Clicar na Lista de Projetos
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[2]/div/div/div
     sleep    3s
@@ -70,10 +70,10 @@ Logar Cadi e Aprovacao da Criaco do Projeto
     type    name=state.reason    ${STEP_ZERO}
     #Clicar em Confirmar
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[4]/form/div[4]/button/span 
+    sleep    5s
     #APROVACAO DO PROJETO
     #Clicar na Etapa
-    click    xpath=/html/body/div/article/div/div/div[2]/div/div/div[4]/form/div[1]/div
-    sleep    3s
+    click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[4]/form/div/div/div/div
     #Selecionar Etapa
     click    id=react-select-step-option-1
     sleep    3s
@@ -104,7 +104,6 @@ Logar Empresario e Fazer Descricao Completa do Projeto
     sleep    3s
     click    id=react-select-project-option-0
     #Preenchimento das Informacoes
-    sleep    3s
     click    name=fullDescription
     type    name=fullDescription    ${DESC_FULL}
     click    name=techDescription
@@ -136,7 +135,7 @@ Logar no CADI e Aprovacoes Seguintes
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div/div/div/div
     sleep    3s
     #Selecionar Empresario
-    click    id=react-select-empresario-option-7
+    click    id=react-select-empresario-option-11
     #Clicar na Lista de Projetos
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[2]/div/div/div
     sleep    3s
@@ -196,7 +195,7 @@ Logar no CADI e Aprovacoes Seguintes
     #Clicar Lista de Professores
     click    xpath=/html/body/div/article/div/div/div[3]/div/div/form/div[2]/div
     #Selecionar Professor
-    click    id=react-select-professor-option-5
+    click    id=react-select-professor-option-9
     #Clicar em Confirmar
     click    xpath=/html/body/div/article/div/div/div[3]/div/div/form/div[3]/button/span[1]
     
@@ -221,7 +220,7 @@ Logar Professor e Vincular Aluno
     #Clicar na Lista de Alunos
     click    xpath=/html/body/div/article/div/div/div[4]/div/div/form/div[2]/div
     #Selecionar Aluno(s)
-    click    id=react-select-students-option-8
+    click    id=react-select-students-option-12
     #Clicar em Confirmar
     click    xpath=/html/body/div/article/div/div/div[4]/div/div/form/div[3]/button/span[1]
     

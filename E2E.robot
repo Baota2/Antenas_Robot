@@ -5,34 +5,6 @@ Test Setup    Run Keywords  Open Browser  ${PROD_URL}  ${BROWSER}
     ...              AND   Set Selenium Speed  ${SELSPEED}    AND    maximize browser window
 #Test TearDown    Close Browser  
 
-***Variables***
-${BROWSER}    chrome
-${SELSPEED}    0.25
-${SENHA}    123456
-${NOMEALUNO}    AlunoE2E
-${NOMECADI}    CadiE2E
-${NOMEEMPRESARIO}    EmpresarioE2E
-${COMPANYNAME}    EmpresaE2E
-${CNPJ}    66386932000122
-${NOMEPROFESSOR}    ProfessorE2E
-${QA_URL}    http://ec2-3-138-123-144.us-east-2.compute.amazonaws.com/
-${PROD_URL}    http://ec2-54-204-105-109.compute-1.amazonaws.com/
-${DEV_URL}    http://antenas-front.herokuapp.com/
-${TITULO_PROJETO}    Projeto E2E
-${DESC_PROJETO}    Descricao do Projeto E2E
-${LINK_PROJETO}    projetoe2e.com.br
-${STEP_ZERO}    Aprovacao da Criacao do Projeto
-${STEP_ONE}    Aprovacao do Projeto
-${STEP_TWO}    Aprovacao da Descricao Completa do Projeto
-${$STEP_THREE}    Aprovacao do Local, Data e Hora da Reuniao
-${STEP_FOUR}    Aprovacao da Reuniao
-${DESC_FULL}    Descricao Completa do Projeto
-${DESC_TECNO}    Descricao Tecnologica
-${LINK_2_PROJETO}    projetoe2elink2.com.br
-${REUNIAO_LOCAL}    FATEC Sao Jose dos Campos
-${DATA_E_HORA}    2020-12-11T15:00
-${ENTREGA_PROJ}    Entrega do Projeto E2E  
-
 *** Test Cases ***
 Logar Empresario e Criar Projeto
     #Logar
@@ -78,12 +50,12 @@ Logar Cadi e Aprovacao da Criaco do Projeto
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div/div/div/div
     sleep    3s
     #Selecionar Empresario
-    click    id=react-select-empresario-option-5
+    click    id=react-select-empresario-option-7
     #Clicar na Lista de Projetos
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[2]/div/div/div
     sleep    3s
     #Selecionar Projeto
-    click    id=react-select-project-option-13
+    click    id=react-select-project-option-0
     sleep    3s
     #Clicar na Etapa
     click    xpath=/html/body/div/article/div/div/div[2]/div/div/div[4]/form/div[1]/div
@@ -130,7 +102,7 @@ Logar Empresario e Fazer Descricao Completa do Projeto
     #Selecionar Projeto Desejado
     click    xpath=/html/body/div/article/div/div/div[3]/div/section/div/div
     sleep    3s
-    click    id=react-select-project-option-13
+    click    id=react-select-project-option-0
     #Preenchimento das Informacoes
     sleep    3s
     click    name=fullDescription
@@ -164,12 +136,12 @@ Logar no CADI e Aprovacoes Seguintes
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div/div/div/div
     sleep    3s
     #Selecionar Empresario
-    click    id=react-select-empresario-option-5
+    click    id=react-select-empresario-option-7
     #Clicar na Lista de Projetos
     click    xpath=//div[@id='root']/article/div/div/div[2]/div/div/div[2]/div/div/div
     sleep    3s
     #Selecionar Projeto
-    click    id=react-select-project-option-13
+    click    id=react-select-project-option-0
     sleep    3s
     #Clicar na Etapa
     click    xpath=/html/body/div/article/div/div/div[2]/div/div/div[4]/form/div[1]/div
@@ -224,9 +196,9 @@ Logar no CADI e Aprovacoes Seguintes
     #Clicar Lista de Professores
     click    xpath=/html/body/div/article/div/div/div[3]/div/div/form/div[2]/div
     #Selecionar Professor
-    click    id=react-select-professor-option-4
+    click    id=react-select-professor-option-5
     #Clicar em Confirmar
-    click    xpath=/html/body/div/article/div/div/div[3]/div/div/form/div[4]/button/span[1]
+    click    xpath=/html/body/div/article/div/div/div[3]/div/div/form/div[3]/button/span[1]
     
 Logar Professor e Vincular Aluno
     #Logar 
@@ -245,11 +217,11 @@ Logar Professor e Vincular Aluno
     #Clicar na Lista de Projetos
     click    xpath=/html/body/div/article/div/div/div[4]/div/div/form/div[1]/div
     #Selecionar Projeto
-    click    id=react-select-project-option-2
+    click    id=react-select-project-option-0
     #Clicar na Lista de Alunos
     click    xpath=/html/body/div/article/div/div/div[4]/div/div/form/div[2]/div
     #Selecionar Aluno(s)
-    click    id=react-select-students-option-7
+    click    id=react-select-students-option-8
     #Clicar em Confirmar
     click    xpath=/html/body/div/article/div/div/div[4]/div/div/form/div[3]/button/span[1]
     
